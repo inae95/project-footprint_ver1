@@ -10,9 +10,9 @@
   <meta property="og:title" content="footprint">
   <meta property="og:image" content="#"> <!--포트폴리오 메인페이지 이미지-->
   <meta property="og:description" content="멸종위기에 처한 동물">
-  <meata name="twitter:card" content="summary">
-  <meata name="twitter:title" content="footprint">
-  <meata name="twitter:url" content="#"> <!--github url 포폴 사이트-->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="footprint">
+  <meta name="twitter:url" content="#"> <!--github url 포폴 사이트-->
   <meta property="twitter:image" content="#"> <!--포트폴리오 메인페이지 이미지-->
   <meta property="twitter:description" content="멸종위기에 처한 동물">
 
@@ -33,7 +33,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- font -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
   <!-- swiper -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -43,390 +44,29 @@
 
 <!-- style -->
   <link rel="stylesheet" href="./css/reset.css">
-  <!-- <link rel="stylesheet" href="./css/default.css"> -->
+  <link rel="stylesheet" href="./css/default.css">
+  <link rel="stylesheet" href="./css/tablet.css">
+  <link rel="stylesheet" href="./css/mobile.css">
 
-
-  <style>
-    *{margin:0;padding:0;border:none}
-    h1,h2,h3,h4,h5,h6,p,a{font-family:'Noto Sans KR'; color:#333333;}
-
-    .eng{font-family:'Roboto';}
-
-    .wrap{
-      width:100%; max-width: 1200px; margin:0 auto;
-    }
-    .container{
-      width:1050px; margin:0 auto;
-    }
-
-    /* header */
-    header{
-      height:80px;
-      display:flex; align-items:center; justify-content:space-between;
-    }
-    .logo{
-      padding-left:20px;
-    }
-    .logo_img{
-      width:128px; height:28px;
-      background:url(./images/logo_set.png) no-repeat; background-size:cover;
-    }
-    .header_right{
-      display:flex; align-items:center;
-    }
-    .header_right nav{
-      width:367px;
-    }
-    .header_right nav>ul>li>a:hover{
-      font-weight:400; color:#fcc810;
-    }
-    .header_right nav>ul{
-      display:inline-block; width:367px;
-    }
-    .header_right nav>ul>li{
-      float:left; padding:0 16px;
-      font-family:'Noto Sans KR'; font-size:15px; font-weight:400;
-    }
-    .header_right nav>ul>li:first-child{
-      padding-left:0;
-    }
-    .header_right nav>ul>li:last-child{
-      padding-right:0;
-    }
-    .search_bar{
-      position:relative; float:right;
-      padding-right:20px; padding-left:30px;
-    }
-    .search_bar>.input_text{
-      width:150px; height:32px; border-radius:10px; background-color:#F6F6F6;
-      font-family:'Roboto'; font-weight:300; font-size:14px;
-    }
-    .search_bar::before{
-      position:absolute; top:10px; left:40px; content:''; display:block;
-      width:10px; height:10px; border:1px solid #737477; border-radius:50%;
-    }
-    .search_bar::after{
-      position: absolute; top:20px; left:48px; content:''; display:block;
-      width:5px; height:5px; border-top:1px solid #737477; transform:rotate(45deg);
-    }
-    .input_text[type="text" i]{
-      padding:0 33px;
-    }
-    .input_text:focus{
-      outline:none;
-    }
-
-    /* main_banner */
-    .main_banner{
-      position:relative;
-      width:100%; max-width:1200px; height:610px; margin:0 auto; padding-bottom: 110px;
-    }
-    .main_banner h1{
-      width:100%; padding-top:170px; position:absolute; z-index:5;
-      font-size:3rem; font-weight:500; color:white; text-align:center; line-height:110%; text-transform:uppercase; transition: 0.6s;
-    }
-    .main_banner .main_banner_bg{
-      background:url("./images/main_banner.png") no-repeat; background-size:cover; background-position:center -10px;
-      width:100%; height:620px;
-      position:absolute; top:0; left:0;
-    }
-    
-    /* section */
-    .atc01_redlist{
-      padding-bottom:160px;
-    }
-    .atc01_img{
-      float:left; width:486px; height:260px; margin-right:80px; background:url(./images/sec_ani01.png) no-repeat; background-size:cover;
-    }
-    .atc01_text{
-      width:470px; height:260px; display:flex; flex-direction:column; justify-content:space-between;
-    }
-    .atc01_tit{
-      font-size:20px; font-weight:600; letter-spacing: -1px; padding-bottom: 30px;
-    }
-    .atc01_txt{
-      font-size:15px; font-weight:400; line-height:26px; padding-bottom:50px;
-    }
-    .atc01_btn{
-      width:130px; height:43px; border:1px solid #737477; border-radius:50px; background-color:white;
-      font-size:15px; font-weight: 500; 
-    }
-    .atc01_btn:hover{
-      border:none; background-color:#fcc810; outline:none; transition:0.3s;
-    }
-
-    .atc02_kind{
-      height:370px; position: relative; display: flex; flex-wrap:wrap; justify-content: space-between; align-items: center; padding-bottom: 160px;
-    }
-    /* .atc02_text{
-      width:530px;
-    } */
-    .atc02_kind .atc02_tit{
-      font-size:20px; font-weight:600; padding-bottom: 100px;
-    }
-    .atc02_kind .atc02_tit p{
-      font-size:15px; font-weight:400; padding-top:6px;
-    }
-    .atc02_kind .atc02_txt_num{
-      width: 530px; display: flex; flex-flow:row wrap;
-    }
-    .atc02_num{
-      width:90px; height:53px; padding:0 20px 20px 0; 
-    }
-    .atc02_num:nth-child(5){
-      padding:0;
-    }
-    .atc02_num h3{
-      font-size:20px; font-weight:600; padding-bottom:8px;
-    }
-    .atc02_num p{
-      font-size:15px; font-weight:400; letter-spacing: -1px;
-    }
-    .atc02_img img{
-      position: absolute; top: 30px; right: -20px; z-index:50;
-      width:312px; height:309px; padding-bottom:20px;
-    }
-    .atc02_img::after{
-      content:''; display:block;  position: absolute; top:0; right:0; width:270px; height:320px; background-color:#F6F6F6;
-    }
-    .atc02_img p{
-      font-size:14px; font-weight:500; text-align:right; padding-top:320px;
-    }
-    .atc02_img span{
-      font-weight:400;
-    }
-
-    .area{
-      padding-bottom:180px;
-    }
-    .area .area_tit{
-      text-align:center; padding-bottom:30px;
-    }
-    .area .area_tit h4{
-      font-size:22px; font-weight:600; color:#1568b9; padding-bottom:16px;
-    }
-    .area .area_tit p{
-      font-weight: 500;
-    }
-    .area .area_tit p:last-child{
-      font-size:14px; font-weight: 300; padding-top:10px;
-    }
-    .area .area_img{
-      display:flex; flex-flow:row wrap; justify-content:center; align-items:center;
-      width:100%; padding-bottom:60px; margin:0 auto;
-    }
-    /* img_hover */
-      .area01_img{
-        position:relative;
-        height:280px; margin:10px 10px;  cursor: pointer;
-      }
-      .area_img .area01_img>a>.area_hover_txt{
-        position:absolute; top:0; left:0; z-index: 40;
-        padding-left:20px; font-size:17px; font-weight:500; opacity:0; transition:0.9s;
-      }
-      .area_img .area01_img:hover>a>.area_hover_txt{
-        opacity:10; padding-top:20px; transition-delay:0.1s;
-      }
-      .area_img .area01_img::after{
-        content:''; display:block; position:absolute; top:0; left:0;
-        width:174px; height:0; background-color: rgba(0, 0, 0, 0.6); opacity:0; transition: 0.7s;
-      }
-      .area_img .area01_img:hover::after{
-        height:280px; opacity:10;
-      }
-      .area_img .area01_img>a>.area_hover_txt>p{
-        color:white;
-      }
-      .area_img .area01_img>a>.area_hover_txt>.eng{
-        font-size:14px; font-weight:400; color:white; padding-bottom:5px;
-      }
-      .area_img .area01_img>a>.area_hover_txt>.area_map>img{
-        width:54px; height:30px; padding-top:180px; color:white; transition-delay:2s;
-      }
-
-    .area_more{
-      display: block;
-      width:130px; height:46px; margin:0 auto; border:1px solid #737477; border-radius:50px; background-color:white;
-      font-size:15px; font-weight: 500; 
-    }
-    .area_more:hover{
-      border:none; background-color:#fcc810; outline:none; transition:0.3s;
-    }
-
-  /* swiper */
-    .endan_swiper{
-      padding-bottom:200px; margin:0 auto;;
-    }
-    .endan_swiper h5{
-      font-size:22px; font-weight:600; color: #1568b9; padding-bottom:60px; text-align: center;
-    }
-    .swiper-container {
-      width: 1060px;
-      height: 240px;
-    }
-    .swiper-slide {
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      flex-flow:column;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-      cursor: pointer;
-    }
-    .swiper-button-next, .swiper-button-prev{
-      width:30px; height:30px; border-radius:50px;
-      background-color: #333333;
-    }
-    .swiper-button-prev::after, .swiper-button-next:after{
-      font-size:13px; color:white;
-    }
-    .swiper-button-prev::after{
-      padding-right:3px;
-    }
-    .swiper-button-next:after{
-      padding-left:3px;
-    }
-
-    .endan_ani{
-      position:relative;
-      width:190px; height: 170px;
-    }
-    .endan_ani img{
-      width:190px; height:170px;
-    }
-    .endan_class p{
-      position:absolute; bottom:86px; left:16px;
-      width:28px; height:28px; border-radius:6px; background-color:#fff2bf; font-size:14px; font-weight:500; text-align:center; line-height:29px;
-    }
-    .endan_class .colVU{
-      background-color:#fff2bf;
-    }
-    .endan_class .colEN, .endan_class .col04{
-      background-color:#fce1c3;
-    }
-    .endan_class .colNT{
-      background-color:#dcf1fe;
-    }
-    .endan_class .colNT{
-      background-color:#dcf1fe;
-    }
-    .endan_bot{
-      display: flex; flex-flow: column; justify-content: space-around;
-      width:190px; height:70px;background-color:#F6F6F6;
-    }
-    .endan_txt{
-      padding-left:20px;
-    }
-    .endan_txt h6{
-      font-size:16px; font-weight:500; padding-bottom:9px;
-    }
-    .endan_txt .eng{
-      font-size:14px; font-weight:400; color:#4b4e53;
-    }
-
-    footer{
-      width:100%; height:300px; padding:60px 0; background-color:#F6F6F6;
-    }
-    .app_download{
-      height:150px; padding-bottom:130px;text-align:center;
-    }
-    .app_download p:first-child{
-      font-weight:500; padding-bottom:10px;
-    }
-    .app_download span{
-      font-size:14px; font-weight:300;
-      }
-    .app_btn{
-      display:flex; justify-content:center; padding-top:60px;
-    }
-    .app_download button{
-      display:flex; justify-content:center; align-items:center;
-      width:140px; height: 46px; border-radius:40px; font-weight:500; outline:none; cursor: pointer;
-    }
-    .app_download button:first-child{
-      margin-right:30px
-    }
-    .app_download button:hover{
-      background-color:#fcc810; transition: 0.3s;
-    }
-    .app_download img{
-      width:15px; height:15px; padding-right:6px; color:#333333;
-    }
-
-    footer .logo_img{
-      width:130px; height:37px; margin:0 auto;
-    }
-
-
-/* 1198이하 가변스타일 */
-    @media (max-width:1198px){
-      .container{
-        width:86%; padding:0 75px;
-        }
-      .atc01_img{
-        width:40.28571428571429%; background-position: center;
-        }
-      .atc01_txt{
-        padding-bottom:35px;
-        }
-      .atc01_text{
-        width:auto;
-      }
-      .area .area_img{
-        width:80%
-      }
-    }
-/* 1130이하 slide */
-    @media (max-width:1130px){
-      .swiper-container{
-        width:842px;
-      }
-      
-    }
-/* 1000이하 가변스타일 */
-    @media (max-width:1060px){
-      .atc02_num{
-        padding-right:30px;
-      }
-      .atc02_kind .atc02_txt_num{
-        width:480px
-      }
-      .atc02_num:nth-child(5){
-        padding-right:30px;
-      }
-    }
-
-/* 768px최소 /테블릿스타일 */
-    /* @media (max-width:768px){
-    } */
-
-/* 360px이상 /테블릿스타일 */
-    /* @media (min-width:360px){
-      .container{width:80%}
-    } */
-
-  </style>
 
 </head>
 <body>
   <div class="wrap">
     <header>
       <div class="logo">
-        <a href="#">
+        <a href="./index.html">
           <div class="logo_img"></div>
         </a>
       </div>
+      <button type="button" class="navbar_toggle">
+        <i class="fa fa-bars" aria-hidden="true" onclick="navToggle.openNav()"></i>
+      </button>
       <div class="header_right">
         <nav>
           <ul>
+            <li id="clobtn" onclick="navToggle.closeNav()">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </li>
             <li><a href="#">발자국</a></li>
             <li><a href="#">멸종동물</a></li>
             <li><a href="#">소식</a></li>
@@ -599,7 +239,7 @@
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
+          <div class="swiper-slide" id="swiper_ain" style="width: 190px; margin-right: 0px;">
             <div class="endan_ani">
               <img src="./images/endan_북극곰.png" alt="레서판다">
             </div>
@@ -615,7 +255,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide" id="swiper_ain">
             <div class="endan_ani">
               <img src="./images/endan_저어새.png" alt="저어새">
             </div>
@@ -631,7 +271,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide" id="swiper_ain">
             <div class="endan_ani">
               <img src="./images/endan_황제펭귄.png" alt="황제펭귄">
             </div>
@@ -647,7 +287,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide" id="swiper_ain">
             <div class="endan_ani">
               <img src="./images/endan_호랑이.png" alt="벵골호랑이">
             </div>
@@ -663,7 +303,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide" id="swiper_ain">
             <div class="endan_ani">
               <img src="./images/endan_레서판다.png" alt="레서판다">
             </div>
@@ -679,7 +319,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide" id="swiper_ain">
             <div class="endan_ani">
               <img src="./images/endan 긴수염고래.png" alt="긴수염고래">
             </div>
@@ -695,7 +335,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide" id="swiper_ain">
             <div class="endan_ani">
               <img src="./images/endan 바다코끼리.png" alt="바다코끼리">
             </div>
@@ -711,7 +351,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide" id="swiper_ain">
             <div class="endan_ani">
               <img src="./images/endan 북극여우.png" alt="북극여우">
             </div>
@@ -727,7 +367,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide" id="swiper_ain">
             <div class="endan_ani">
               <img src="./images/endan 수마트라코끼리.png" alt="수마트라코끼리">
             </div>
@@ -743,7 +383,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide" id="swiper_ain">
             <div class="endan_ani">
               <img src="./images/endan 수달.png" alt="수달">
             </div>
@@ -777,7 +417,7 @@
           </button>
         </div>
       </section>  
-        <a href="#">
+        <a href="./index.html">
           <div class="logo_img"></div>
         </a>
     </footer>
@@ -787,7 +427,22 @@
   var translate = document.querySelectorAll(".translate");
   var bigTit = document.querySelector('.big_tit');
   var header = document.querySelector('header');
+  var headerRight = document.querySelector('.header_right');
+  // var navBar = document.querySelector('.nav');
 
+  // nav 토글
+  var navToggle = {
+    openNav : function(){
+      // document.querySelector('.header_right').style.width='300px';
+      headerRight.classList.add('on');
+    },
+    closeNav : function(){
+      // document.querySelector('.header_right').style.width='0';
+      headerRight.classList.remove('on');
+    }
+  }
+  
+  // header 높이 글씨 이벤트
   let headerHigh = header.offsetHeight;
 
   window.addEventListener('scroll', function(){
@@ -799,22 +454,51 @@
     })
     bigTit.style.opacity = - scroll / (headerHigh / 6) + 5
   });
-  // var swiperContai = document.querySelector('.swiper-container').width;
-  // console.log(swiperContai);
+
   var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 5,
-      spaceBetween: 25,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+    spaceBetween: 25,
+
+    breakpoints: {
+      1131: {
+        slidesPerView: 5,
       },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+      1130: {
+        slidesPerView: 4,
       },
-      autoplay: {
+      930: {
+        slidesPerView: 4,
+      },
+      901: {
+        slidesPerView: 4,
+      },
+      900: {
+        slidesPerView: 3,
+      },
+      700: {
+        slidesPerView: 3,
+      },
+      699: {
+        slidesPerView: 2,
+      },
+      480: {
+        slidesPerView: 2,
+      },
+      479: {
+        slidesPerView: 1,
+      },
+      
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
     delay: 2000,
-  },
-    });
+    },
+  });
 </script>
 </html>
