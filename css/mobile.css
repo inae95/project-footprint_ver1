@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+/* 869px이하 모바일 */
+@media (max-width:869px){
+  /* header */
+  .header{
+    width:100%;
+  }
+  .navbar_toggle{
+    display:block; position:absolute; top:25px; right:20px;
+    font-size:25px; outline:none; background-color:white; color:#333333;
+  }
+  .header_right{
+    position:fixed; top:0; right:0; z-index: 1000; align-items:unset; width:0; overflow: hidden;
+  /* display: none; */
+  height:auto; transition: 0.3s;
+  }
+  .header_right.on{
+  width:300px;
+  }
+
+  #clobtn{
+  display:block; cursor: pointer;
+}
+  .header_right nav{
+    width:300px;
+  }
+  .header_right nav>ul{
+    display:flex; flex-flow:column; align-items:center; 
+    width:300px; height:100vh; padding-top:80px;
+    z-index:60; background-color:#333333;
+  }
+  .header_right nav>ul>li{
+    font-size:16px; padding:30px 0;
+  }
+  .header_right nav>ul>li>a{
+    color:#F6F6F6
+  }
+  .search_bar{
+    position: absolute; top:500px; right:25px;
+  }
+  .search_bar>.input_text{
+    background-color: rgba(0, 0, 0, 0.6); color:white
+  }
+
+  .atc01_redlist{
+    display:flex; flex-flow:column;
+  }
+  .atc01_tit{
+    text-align:center;
+  }
+  .atc01_img{
+    width:100%; margin:0 0 80px 0;
+  }
+  .atc01_text {
+    height:auto;
+  }
+  .atc01_btn{
+    margin:0 auto;
+  }
+  .atc02_kind{
+    display:flex; flex-flow:column nowrap; height:auto;
+  }
+  .atc02_tit{
+    text-align:center;
+  }
+  .atc02_kind .atc02_txt_num{
+    width:100%;
+  }
+  .atc02_txt_num{
+    display: flex; justify-content: center; 
+    padding-bottom:30px; text-align:center;
+  }
+  .atc02_num{
+    padding-right:0;
+  }
+  .atc02_num:nth-child(5) {
+    padding:0 10px;
+  }
+  .atc02_num{
+    padding:0 0 30px 0;
+  }
+  .atc02_img{
+    padding-left:18%;
+  }
+  .area .area_img {
+  width:100%;
+  };
+  .swiper-container {
+  width: 190px;
+  }
+}
+
+
+@media (max-width:479px){
+  .main_banner h1{
+    font-size:30px
+  }
+
+  /* footer */
+  .app_download p:first-child{
+    width: 80%; margin: 0 auto; line-height:30px;
+  }
+}

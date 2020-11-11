@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+/* 1198최대 가변스타일 */
+@media (max-width:1198px){
+  .container{ 
+    /* width1048 */
+    width:87.33333333333333%;
+    }
+  .atc01_img{
+    width:40.28571428571429%; background-position: center;
+    }
+  .atc01_txt{
+    padding-bottom:35px;
+    }
+  .atc01_text{
+    width:auto;
+  }
+  .area .area_img{
+    width:80%
+  }
+}
+/* 1130최대 slide */
+@media (max-width:1130px){
+  .swiper-container{
+    width:840px;
+  }
+  
+}
+/* 1060최대 가변스타일 */
+@media (max-width:1060px){
+  .atc02_num{
+    padding-right:30px;
+  }
+  .atc02_kind .atc02_txt_num{
+    width:480px
+  }
+  .atc02_num:nth-child(5){
+    padding-right:30px;
+  }
+  .swiper-wrapper> .swiper-slide{
+    width:190px;
+  }
+}
+
+/* 929px최대 slide */
+@media (max-width:900px){
+  .swiper-container {
+    width:620px;
+    }
+}
+/* 699px최대 slide */
+@media (max-width:699px){
+  .swiper-container {
+    width:405px;
+    }
+}
+/* 479px최대 slide */
+@media (max-width:479px){
+
+  .main_banner h1{
+    font-size:40px
+  }
+  /* swiper */
+  .swiper-container {
+    width:190px;
+    }
+}
+
