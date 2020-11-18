@@ -18,10 +18,9 @@
   width:300px;
   }
 
-
   #clobtn{
   display:block; cursor: pointer;
-}
+  }
   .header_right nav{
     width:250px;
   }
@@ -86,6 +85,16 @@
 }
 
 
+
+/* 699px최대 slide */
+@media (max-width:699px){
+  .swiper-container {
+    width:405px;
+    }
+  }
+
+
+
 @media (max-width:479px){
   .main_banner{
     height:600px
@@ -96,9 +105,17 @@
   .main_banner h1{
     font-size:10vw
   }
+  .atc02_tit h2{
+    width:270px; margin:0 auto;
+  }
   .area .area_img {
     width:100%;
   };
+
+/* 479px최대 slide */
+  .swiper-container {
+    width:190px;
+    }
 
   /* footer */
   .app_download p:first-child{
@@ -117,20 +134,6 @@
   }
 }
 
-
-/* 699px최대 slide */
-@media (max-width:699px){
-  .swiper-container {
-    width:405px;
-    }
-}
-/* 479px최대 slide */
-@media (max-width:479px){
-  /* swiper */
-  .swiper-container {
-    width:190px;
-    }
-}
 
 
 @media (max-width:380px){
