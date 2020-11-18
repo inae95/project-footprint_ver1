@@ -12,35 +12,33 @@
   }
   .header_right{
     position:fixed; top:0; right:0; z-index: 1000; align-items:unset; width:0; overflow: hidden;
-  /* display: none; */
   height:auto; transition: 0.3s;
   }
   .header_right.on{
   width:300px;
   }
 
+
   #clobtn{
   display:block; cursor: pointer;
 }
   .header_right nav{
-    width:300px;
+    width:250px;
   }
   .header_right nav>ul{
     display:flex; flex-flow:column; align-items:center; 
-    width:300px; height:100vh; padding-top:80px;
-    z-index:60; background-color:#333333;
+    width:250px; height:100vh; padding-top:80px;
+    z-index:60; background-color:rgb(229, 230, 232);
   }
   .header_right nav>ul>li{
-    font-size:16px; padding:30px 0;
-  }
-  .header_right nav>ul>li>a{
-    color:#F6F6F6
+    font-size:16px; padding:30px 0; color:#333333
   }
   .search_bar{
-    position: absolute; top:500px; right:25px;
+    position: absolute; top:500px; right:-5px;
   }
   .search_bar>.input_text{
-    background-color: rgba(0, 0, 0, 0.6); color:white
+    background-color:white; color:#333333;
+    font-family:'Noto Sans KR'
   }
 
   .atc01_redlist{
@@ -68,23 +66,19 @@
     width:100%;
   }
   .atc02_txt_num{
-    display: flex; justify-content: center; 
-    padding-bottom:30px; text-align:center;
+    justify-content:center; text-align:center;
+    padding-bottom:30px; 
   }
   .atc02_num{
+    width:100px;
     padding-right:0;
   }
-  .atc02_num:nth-child(5) {
-    padding:0 10px;
-  }
-  .atc02_num{
-    padding:0 0 30px 0;
-  }
+
   .atc02_img{
     padding-left:18%;
   }
   .area .area_img {
-  width:100%;
+  width:85%;
   };
   .swiper-container {
   width: 190px;
@@ -93,12 +87,63 @@
 
 
 @media (max-width:479px){
-  .main_banner h1{
-    font-size:30px
+  .main_banner{
+    height:600px
   }
+  .main_banner .main_banner_bg{
+    height:600px;
+  }
+  .main_banner h1{
+    font-size:10vw
+  }
+  .area .area_img {
+    width:100%;
+  };
 
   /* footer */
   .app_download p:first-child{
     width: 80%; margin: 0 auto; line-height:30px;
+  }
+  .area01_img img{
+    width:154px; height:260px
+  }
+  .swiper-container {
+    width:190px; padding-top:20px;
+    transform: scale(1.2);
+  }
+  .swiper-button-next,
+  .swiper-button-prev{
+    width:25px; height:25px
+  }
+}
+
+
+/* 699px최대 slide */
+@media (max-width:699px){
+  .swiper-container {
+    width:405px;
+    }
+}
+/* 479px최대 slide */
+@media (max-width:479px){
+  /* swiper */
+  .swiper-container {
+    width:190px;
+    }
+}
+
+
+@media (max-width:380px){
+  .atc02_txt_num{
+    justify-content:left;
+  }
+  .atc02_num{
+    width:50%;
+  }
+  .area01_img img{
+    width:124px; height:210px
+  }
+  .app_download button:first-child{
+    margin-right:10px
   }
 }
