@@ -5,16 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- open graphic -->
-  <meta property="og:url" content="#"> <!--포트폴리오 사이트-->
+  <meta property="og:url" content="https://inae95.github.io/footprint/.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="footprint">
-  <meta property="og:image" content="#"> <!--포트폴리오 메인페이지 이미지-->
-  <meta property="og:description" content="멸종위기에 처한 동물">
+  <meta property="og:title" content="footprint 멸종동물을 확인하기">
+  <meta property="og:image" content="./images/footprint_meta_image.png">
+  <meta property="og:description" content="멸종위기에 처한 동물을 구해주세요">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="footprint">
-  <meta name="twitter:url" content="#"> <!--github url 포폴 사이트-->
-  <meta property="twitter:image" content="#"> <!--포트폴리오 메인페이지 이미지-->
-  <meta property="twitter:description" content="멸종위기에 처한 동물">
+  <meta name="twitter:url" content="https://inae95.github.io/footprint/.">
+  <meta property="twitter:image" content="./images/footprint_meta_image.png">
+  <meta property="twitter:description" content="멸종위기에 처한 동물을 구해주세요">
 
   <!-- inpor -->
   <meta name="Keyword" content="html, css3, javascript portfolio footprint animal">
@@ -26,7 +26,8 @@
   <title>footprint</title>
 
   <!-- favicon -->
-  <link rel="shortcut icon" href="./" type="image/x-icon">
+  <link rel="shortcut icon" href="./favicon_16.ico" sizes="16x16">
+  <link rel="shortcut icon" href="./favicon_32.ico" sizes="32x32">
   <!-- prefixfree -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
   <!-- jquery -->
@@ -52,6 +53,7 @@
 </head>
 <body>
   <div class="wrap">
+    <!-- 내비 -->
     <header>
       <div class="logo">
         <a href="./index.html">
@@ -79,6 +81,7 @@
         </div>
       </div>
     </header>
+    <!-- 메인이미지 -->
     <div class="main_banner">
       <h1 class="eng big_tit translate" data-speed="0.1">
         Whose<hr>
@@ -86,6 +89,7 @@
       <div class="main_banner_bg"></div>
     </div>
     <div class="container">
+      <!-- IUCN 레드리스트 -->
       <article class="atc01_redlist">
         <div class="atc01_img">
         </div>
@@ -104,6 +108,7 @@
           </button>
         </div>
       </article>
+      <!-- 멸종동물 % 종류 -->
       <article class="atc02_kind">
         <div class="atc02_text">
           <div class="atc02_tit">
@@ -147,6 +152,7 @@
         </div>
       </article>
     </div>
+    <!-- 지역별 검색 -->
     <section class="area">
       <div class="area_tit">
         <h4 class="eng">AREA</h4>
@@ -160,9 +166,6 @@
             <div class="area_hover_txt">
               <p class="eng">Green Land</p>
               <p>그린란드</p>
-              <div class="area_map">
-                <img src="./images/area_map_greenladn.svg" alt="그린란드">
-              </div>
             </div>
           </a>
         </div>
@@ -172,9 +175,6 @@
               <div class="area_hover_txt">
                 <p class="eng">North America</p>
                 <p>북아메리카</p>
-                <div class="area_map">
-                  <img src="./images/area_map_North America.svg" alt="북아메리카">
-                </div>
               </div>
             </a>  
         </div>
@@ -184,9 +184,6 @@
             <div class="area_hover_txt">
               <p class="eng">Southeast Asia</p>
               <p>동남아시아</p>
-              <div class="area_map">
-                <img src="./images/area_map_SoutheastAsia.svg" alt="그린란드">
-              </div>
             </div>
           </a>
         </div>
@@ -196,9 +193,6 @@
             <div class="area_hover_txt">
               <p class="eng">Antarctica</p>
               <p>남극대륙</p>
-              <div class="area_map">
-                <img src="./images/area_map_Antarctica.svg" alt="남극대륙">
-              </div>
             </div>
           </a>
         </div>
@@ -208,9 +202,6 @@
             <div class="area_hover_txt">
               <p class="eng">Africa</p>
               <p>아프리카</p>
-              <div class="area_map">
-                <img src="./images/area_map_africa.svg" alt="아프리카">
-              </div>
             </div>
           </a>
         </div>
@@ -220,9 +211,6 @@
             <div class="area_hover_txt">
               <p class="eng">Oceania</p>
               <p>오세아니아</p>
-              <div class="area_map">
-                <img src="./images/area_map_Oceania.svg" alt="오세아니아">
-              </div>
             </div>
           </a>
         </div>
@@ -231,6 +219,7 @@
         <a href="#">지역 더 보기</a>
       </button>
     </section>
+    <!-- 멸종동물 슬라이드 -->
     <section class="endan_swiper">
       <h5 class="endan_tit eng">Endangered Animal</h5>
       <!-- Swiper -->
@@ -402,6 +391,7 @@
         </div>
       </div>
     </section>
+    <!-- APP다운 -->
     <footer>
       <section class="app_download">
         <p>탄소발자국을 줄이며 멸종위기 동물을 확인해보세요.</p>
@@ -423,82 +413,6 @@
     </footer>
   </div>
 </body>
-<script>
-  var translate = document.querySelectorAll(".translate");
-  var bigTit = document.querySelector('.big_tit');
-  var header = document.querySelector('header');
-  var headerRight = document.querySelector('.header_right');
-  // var navBar = document.querySelector('.nav');
-
-  // nav 토글
-  var navToggle = {
-    openNav : function(){
-      // document.querySelector('.header_right').style.width='300px';
-      headerRight.classList.add('on');
-    },
-    closeNav : function(){
-      // document.querySelector('.header_right').style.width='0';
-      headerRight.classList.remove('on');
-    }
-  }
-  
-  // header 높이 글씨 이벤트
-  let headerHigh = header.offsetHeight;
-
-  window.addEventListener('scroll', function(){
-    let scroll = window.pageYOffset
-
-    translate.forEach(element => {
-      var speed = element.dataset.speed;
-      element.style.transform = `translateY(${scroll * speed}px)`;
-    })
-    bigTit.style.opacity = - scroll / (headerHigh / 6) + 5
-  });
-
-  var swiper = new Swiper('.swiper-container', {
-    spaceBetween: 25,
-
-    breakpoints: {
-      1131: {
-        slidesPerView: 5,
-      },
-      1130: {
-        slidesPerView: 4,
-      },
-      930: {
-        slidesPerView: 4,
-      },
-      901: {
-        slidesPerView: 4,
-      },
-      900: {
-        slidesPerView: 3,
-      },
-      700: {
-        slidesPerView: 3,
-      },
-      699: {
-        slidesPerView: 2,
-      },
-      480: {
-        slidesPerView: 2,
-      },
-      479: {
-        slidesPerView: 1,
-      },
-      
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    autoplay: {
-    delay: 2000,
-    },
-  });
-</script>
+<script src="./js/js.js"></script>
+<script src="./js/swiper.js"></script>
 </html>
