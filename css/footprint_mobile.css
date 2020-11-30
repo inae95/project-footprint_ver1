@@ -1,6 +1,10 @@
 @charset "utf-8";
 
 @media (max-width:699px){
+  .map_tit>h2{
+    width:60%;
+  }
+
   .redlist_left{
     padding-bottom:50px;
   }
@@ -10,5 +14,4 @@
   .redlist_right{
     width:100%;
   }
-  
 }
