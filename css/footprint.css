@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+*{margin:0;padding:0;border:none;}
+h1,h2,h3,h4,h5,h6,p,a{font-family:'Noto Sans KR'; color:#333333;}
+
+.eng{font-family:'Roboto';}
+
+.wrap{
+  width:100%; max-width: 1200px; margin:0 auto;
+}
+.container{
+  margin:0 auto;  width:90%
+}
+
+
+
+/* main_banner */
+.main_banner{
+  height:500px;
+  background:url(../images/footprint_main_banner.jpg) no-repeat center; background-size:cover;
+}
+.main_tit{
+  font-size:1.5rem; font-weight:600; line-height:35px; padding:180px 0 40px 0;
+}
+.map_tit>.eng{
+  font-weight:bold; padding-bottom:10px;
+}
+.map_tit>h2{
+  width:30%; line-height:26px;
+}
+/* redlist */
+.redlist>.container{
+  display:flex; flex-flow:row wrap; padding:70px 0; justify-content:space-between;
+}
+.redlist>.container>.redlist_left{
+  width:40%;
+}
+.redlist_img{
+  height:280px;
+  background:url(../images/footprint_redlist.jpg) no-repeat center; background-size:cover;
+}
+.redlist_left>p{
+  font-size:14px; color:#282828; padding-top:10px;
+}
+.redlist_right{
+  width:50%;
+}
+.redlist_right>h3{
+  font-size:1.3rem; font-weight:bold; padding-bottom:20px;
+}
+.redlist_right>.redlist_tit>p{
+  line-height:32px;
+}

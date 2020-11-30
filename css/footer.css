@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/* footer */
+footer{
+  width:100%; height:300px; padding:60px 0; background-color:#F6F6F6;
+}
+.app_download{
+  height:150px; padding-bottom:130px; text-align:center;
+}
+.app_download p:first-child{
+  font-weight:500; padding-bottom:10px;
+}
+.app_download span{
+  font-size:14px; font-weight:300;
+  }
+.app_btn{
+  display:flex; justify-content:center; padding-top:60px;
+}
+.app_download button{
+  display:flex; justify-content:center; align-items:center;
+  width:140px; height: 46px; border-radius:40px; background-color:#dfdede;
+  font-weight:500; outline:none; cursor: pointer;
+}
+.app_download button:first-child{
+  margin-right:30px
+}
+.app_download button:hover{
+  background-color:#fcc810; transition: 0.3s;
+}
+.app_download img{
+  width:15px; height:15px; padding-right:6px; color:#333333;
+}
+
+footer .logo_img{
+  width:130px; height:37px; margin:0 auto;
+}

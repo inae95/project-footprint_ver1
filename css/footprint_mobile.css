@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+@media (max-width:699px){
+  .redlist_left{
+    padding-bottom:50px;
+  }
+  .redlist>.container>.redlist_left{
+    width:100%;
+  }
+  .redlist_right{
+    width:100%;
+  }
+  
+}
